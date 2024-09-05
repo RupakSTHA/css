@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<style>
+	/* div that has any id */
+	div[id]{
+		color:blue;
+	}
+	/* div that has any class */
+	div[class]{
+		color:green;
+	}
+	/* div that has any class="custom" */
+	div[class="custom"]{
+		color:red;
+	}
+	/* div that has class where there is tilled value */
+	div[class~="tilled"]{
+		color:yellow;
+	}
+	/* select where title="test" */
+	a[title="test"]{
+		color:orange;
+	}
+	/* grab all th a which has pdf at last */
+	a[href$="pdf"]{
+		color:purple;
+	}
+	/* grab all the a which has http at the begging of href  */
+	a[href^="https"]{
+		color:grey;
+	}
+</style>
+<body>
+	<div id="header">
+		<h1>header title</h1>
+		<h2>header 2 title</h2>
+	</div>
+	<div class="content">Hey, how are you?</div>
+	<div class="custom">Hey, there are you all right?</div>
+	<div class="content tilled">Hey, there are you all right?</div>
+
+	<a href="https://www.test.com" title="test">test</a>
+	<a href="https://www.test2.com" title="test2">test2</a>
+	<a href="test.pdf" title="pdf">pdf</a>
+	
+</body>
+</html>
