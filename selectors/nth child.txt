@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<style>
+	/* div that has any id */
+	#header p:nth-child(1){
+		color:blue;
+	}
+	#header p:nth-child(odd){
+		color:blue;
+	}
+	#header p:nth-child(even){
+		color:blue;
+	}
+
+	/*where n = 0, 1 , and 2*/
+	#header p:nth-child(3n+1){
+		color:blue;
+	}
+</style>
+<body>
+	<div id="header">
+
+		<p>This is first p</p>
+		<p>Another p</p>
+		<p>next p</p>
+		<hr>
+	</div>
+	
+</body>
+</html>
