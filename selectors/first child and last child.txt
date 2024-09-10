@@ -10,6 +10,9 @@
 	#header p:first-child{
 		color:blue;
 	}
+	#header p:last-child{
+		color:yellow;
+	}
 </style>
 <body>
 	<div id="header">
