@@ -33,7 +33,18 @@
 		background-size: 200px;
 		background-color: #fff;
 	}
+	/* by multiple background */
+	.background-multiple{
+		margin-top:50px;
+		width:500px;
+		height:200px;
+		background-image: url('dummy.png'),
+		url('back.jpg');
+		background-repeat: no-repeat, no-repeat;
+		background-position: center, top left;
+		background-size: 300px , 100%;
 
+	}
 
 </style>
 <body>
@@ -41,6 +52,8 @@
 	<div class="background-no-repeat"></div>
 
 	<div class="background-shortcut"></div>
+
+	<div class="background-multiple"></div>
 	
 </body>
 </html>
