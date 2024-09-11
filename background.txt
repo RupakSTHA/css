@@ -1,0 +1,33 @@
+back<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<style>
+	/* by default it repeat to right and bottom */
+	.background-repeat{
+		width:300px;
+		height:300px;
+		background-color: green;
+		background-image: url('dummy.png');
+
+	}
+	/* no-repeat */
+	.background-no-repeat{
+		margin-top:50px;
+		width:300px;
+		height:300px;
+		background-color: #fff;
+		background-image: url('dummy.png');
+		background-repeat: no-repeat;
+	}
+
+</style>
+<body>
+	<div class="background-repeat"></div>
+	<div class="background-no-repeat"></div>
+	
+</body>
+</html>
